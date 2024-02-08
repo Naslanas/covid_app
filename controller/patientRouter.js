@@ -17,5 +17,11 @@ router.get("/viewall",async(req,res)=>{
     res.json(data)
 })
 
+router.post("/search",async(req,res)=>{
+    let input = req.body
+    let data=await patientModels.find(input)
+    res.json(data)
+})
+
 
 module.exports=router
