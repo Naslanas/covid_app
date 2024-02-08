@@ -9,4 +9,4 @@ const patientSchema = mongoose.Schema(
     }
 )
 
-module.exports=mongoose.model("patient",patientSchema)
+module.exports=mongoose.model("covid",patientSchema)
